@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: squidy
+spec:
+  type: NodePort
+  selector:
+    app: squidy
+  ports:
+    - protocol: TCP
+      port: 4180
+      targetPort: 4180
+      name: squidy
