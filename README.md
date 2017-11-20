@@ -1,5 +1,8 @@
 # kubernetes-squid-proxy
 
+Squid proxy in kubernetes
+Fantastic for setting up simple authentication to private services
+
 - upload the oauth2_proxy.cfg as `conf` configmap in the squidy namespace
 - Run squid ./deploy.sh
 - Redirect host record to new ingress
