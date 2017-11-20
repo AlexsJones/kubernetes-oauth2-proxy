@@ -7,6 +7,9 @@ Fantastic for setting up simple authentication to private services
 - Run squid ./deploy.sh
 - Redirect host record to new ingress
 
+
+
+Here is an example of how you would direct from the primary ingress into the squid proxy; the proxy then directing to your service.
 ```
 #This is an auto generated file
 kind: Ingress
