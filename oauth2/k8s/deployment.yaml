@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: squidy
+  name: oauth2
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: squidy
+        app: oauth2
     spec:
       containers:
-        - name: squidy
-          image: tibbar/squidy:latest
+        - name: oauth2
+          image: tibbar/kubernetes-oauth2:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 4180

@@ -1,13 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: squidy
+  name: oauth2
 spec:
   type: NodePort
   selector:
-    app: squidy
+    app: oauth2
   ports:
     - protocol: TCP
       port: 4180
       targetPort: 4180
-      name: squidy
+      name: oauth2
